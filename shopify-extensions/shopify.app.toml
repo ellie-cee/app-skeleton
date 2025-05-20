@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "405e1050d6f074edd31870f043a08eff"
+name = "C+R For Loose Leaf Tea Market"
+handle = "loose-leaf-tea"
+application_url = "https://loose-leaf-a282834dc506.herokuapp.com/"
+embedded = false
+
+[build]
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_cart_transforms,read_content,read_customers,read_discounts,read_discovery,read_files,read_inventory,read_metaobject_definitions,read_metaobjects,read_online_store_pages,read_order_edits,read_orders,read_products,write_cart_transforms,write_content,write_customers,write_discounts,write_files,write_inventory,write_metaobject_definitions,write_metaobjects,write_online_store_pages,write_order_edits,write_orders,write_products"
+
+[auth]
+redirect_urls = [
+  "https://loose-leaf-a282834dc506.herokuapp.com/shopify/auth/",
+  "https://loose-leaf-a282834dc506.herokuapp.com/shopify/login/",
+  "https://loose-leaf-a282834dc506.herokuapp.com/shopify/finalize/",
+  "https://loose-leaf-a282834dc506.herokuapp.com/shopify/logout/"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false
